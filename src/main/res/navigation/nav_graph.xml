@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.recipe4u.ui.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/einkaufslisteFragment"
+        android:name="com.example.recipe4u.ui.EinkaufslisteFragment"
+        android:label="EinkaufslisteFragment" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.recipe4u.ui.FavoriteFragment"
+        android:label="FavoriteFragment" />
+    <fragment
+        android:id="@+id/kategorienFragment"
+        android:name="com.example.recipe4u.ui.KategorienFragment"
+        android:label="KategorienFragment" >
+        <action
+            android:id="@+id/action_kategorienFragment_to_categoryResultFragment"
+            app:destination="@id/categoryResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.example.recipe4u.ui.RecipeDetailFragment"
+        android:label="RecipeDetailFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.recipe4u.ui.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/categoryResultFragment"
+        android:name="com.example.recipe4u.ui.CategoryResultFragment"
+        android:label="CategoryResultFragment" />
+    <fragment
+        android:id="@+id/recipeDetailFavFragment"
+        android:name="com.example.recipe4u.ui.RecipeDetailFavFragment"
+        android:label="RecipeDetailFavFragment" />
+</navigation>
